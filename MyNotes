@@ -1,0 +1,6 @@
+Props.Children Kullanımı
+(Expense Tracker de kullanılıyor..)
+Children, is a reserved name and the value of this special children prop 
+will always be the content between the opening and closing tags of your custom component.
+So in this case,this content between the opening and closing card tag,
+that is what will be available on props children inside of that card.
