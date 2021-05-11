@@ -1,6 +1,18 @@
-Props.Children Kullanımı
+Props.Children Kullanımı(Composition)
 (Expense Tracker de kullanılıyor..)
 Children, is a reserved name and the value of this special children prop 
 will always be the content between the opening and closing tags of your custom component.
 So in this case,this content between the opening and closing card tag,
 that is what will be available on props children inside of that card.
+
+//neden wrapper div ya  da array olmadan jsx dönemeyiz???
+This is two separate elements side by side.That's why you always need such a wrapper,
+because in createElement world, you always create one element which then may have more child elements.
+
+46_//event onClick on a button is also a props ( on.. props) that is being internally used by for example Button
+they all accept a function as a props..
+
+47_when we define a cons arrow functşon as an event handler(onClick vs.) then dont put () like this.. onclick={clickHandler()}
+just put the name, otherwise it is called immediately rather than being CLicked..
+48-useState should be called atthe beginning of component definiton
+set function does not run immediately, but is scheduled, so after calling console.log gives the prev value
