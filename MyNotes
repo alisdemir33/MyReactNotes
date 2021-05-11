@@ -16,3 +16,22 @@ they all accept a function as a props..
 just put the name, otherwise it is called immediately rather than being CLicked..
 48-useState should be called atthe beginning of component definiton
 set function does not run immediately, but is scheduled, so after calling console.log gives the prev value
+*****************************
+52   <input type="text" value={title} onChange={titleChangeHandler} />
+   
+   const titleChangeHandler =(event) =>{
+        event.preventDefault();
+        setTitle(event.target.value);
+    }
+    in this scenario event is automaticly send by javascript, we dont need to send event explicity.
+    we added the function to on.. event so, event is sent auto mod..
+    
+  53..
+  useState i eğer number veya Date için kullanıyor isek bile 
+  useState(''); şekinde kullanırız. çünkü event.target.value her zaman stringdir
+  
+  54..
+  if your state update depends on the previous state than use this format..
+  setCounter( (prevState) =>{ return prevState+1 })
+  
+    
