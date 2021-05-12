@@ -34,4 +34,8 @@ set function does not run immediately, but is scheduled, so after calling consol
   if your state update depends on the previous state than use this format..
   setCounter( (prevState) =>{ return prevState+1 })
   
+  58--child to parent data sending;
+  functions are sent as props and we do not call them by adding  ()  assigning for axample onClick, it is only POINTER,
+  then where ever the real funciton is defined, it automatically takes the sent parameter object..
+  
     
