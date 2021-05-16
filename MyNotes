@@ -38,4 +38,7 @@ set function does not run immediately, but is scheduled, so after calling consol
   functions are sent as props and we do not call them by adding  ()  assigning for axample onClick, it is only POINTER,
   then where ever the real funciton is defined, it automatically takes the sent parameter object..
   
+  74-
+  style verince önceden verilen tüm cssler eziliyor. style="" ilk önceliğe sahip, verince düzeltmek zor..
+  
     
